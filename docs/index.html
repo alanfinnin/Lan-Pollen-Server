@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+.fa{
+color: black;
+padding-right: 10px;
+}
+a {
+  color: black;
+  font-family: helvetica;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: black;
+}
+
+a:visited {
+  color: purple;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Lan Pollen Server</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>The Beginning</h2>
+      <h5>Research, July 6, 2020</h5>
+      <!--<div class="fakeimg" style="height:200px;">Image</div>-->
+	  <img style="height:200px;" src="weatherie.JPG" alt="placeholder">
+      <p><b>Research</b></p>
+      <p>After Covid started and University ended I was stuck for a 
+	  project to do. I played around with a few ideas and eventually 
+	  came up with this idea. A scarper and server to host the data on 
+	  the network.</p>
+    </div>
+    <div class="card">
+      <h2>Scraper</h2>
+      <h5>July 7, 2020</h5>
+     
+      <p><b>Scraper Software</b></p>
+      <p>After using Python previously for a scraper I decided to use 
+	  it again. I started by finding a pollen counting site, using 
+	  weather.ie which had a nice layout (if terribly awkward class names). 
+	  I then used my knowledge of Python to gather this data and save 
+	  it to a text file.<br>This scraper involves a loop so it will run and update the data every night.</p>
+    </div>
+	<div class="card">
+      <h2>Server Software</h2>
+      <h5>Server research & implemtation, July 8, 2020</h5>
+      <p><b>Server Software</b></p>
+      <p>Starting off without much of an understanding I quickly learned. I set my eyes on XAMPP, I got 
+	  everything downaloded, then hit a roadblock. No matter what I did the installation would fail.<br>
+	  With a hours of work I still made it nowhere. But keep in mind I am running this on an Optiplex 745,
+	  with 3gb of ram, a Core 2 Duo and three drives, one of which is almost 10 years old. Also the computer 
+	  is also a decade years old.<br><br>Either way with some time I gave up and went in search of something else.
+	  Setting eyes on Wamp. After some time of setting up the C++ distributions I had success!<br><br> Then 
+	  blue screen of death...</p>
+    </div>
+	<div class="card">
+      <h2>Website</h2>
+      <h5>July 8, 2020</h5>
+	  <img style="height:200px;" src="pollen count.JPG" alt="placeholder">
+      <p><b>HTML Work</b></p>
+      <p>Now that I have the server working and I didnt want to deal with the blue screem. I started working on the 
+	  visual aspet of the data. I created a small index to pull the data and display in an appealing way. Emulating 
+	  the weather website to a degree.</p>
+    </div>
+	<div class="card">
+      <h2>Computer</h2>
+      <h5>July 9, 2020</h5>
+	  <img style="height:200px;text-align:center;" src="bsod.JPG" alt="placeholder">
+      <p><b>Blue Screen</b></p>
+      <p>Now I had to deal with the blue screen. The machine I'm working with only has 3gb of ram alongside the 
+	  afformetioned issues. This is an issue for many reasons. I was thinking of ways to fix this when I landed on a better idea.
+	  When the computer blue screens it does some diagnostic work then restarts. Instead of fixing the issue, I can just work around it.
+	  <br><br>I created a script to start all necessary programs on pc start. I also disabled the need for a username and password. So it will
+	  log straight in and lastly I disabled the admin window so it does not ask for priviledges on server start.<br>This adds a satisfactory level
+	  of reliability which I am very proud of.</p>
+    </div>
+	<div class="card">
+      <h2>Finished</h2>
+      <h5>July 9, 2020</h5>
+	  <img style="height:200px;text-align:center;" src="final.JPG" alt="placeholder">
+      
+      <p>Although some work can still be done, for instance tidying the code, for now I am happy with my creation. The Git is 
+	  linked if you want to have a look. Now its just a matter of seeing how reliable the pc is and is anything breaks with time.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About This Project</h2>
+      <!--<div class="fakeimg" style="height:100px;">Image</div>-->
+      <p>I always need to have a project to keep me entertained. To this end I came up with this idea during the famous Summer of 2020 to keep myself programmatically occupied.</p>
+	  <a href=" https://github.com/alanfinnin/Lan-Pollen-Server">Link to project github</a><br>
+    </div>
+    <div class="card">
+      <h3>Popular Projects</h3>
+	  <a href="http://skynet.ie/~alanfinnin">My Home Page</a><br>
+      <a href="https://alanfinnin.github.io/PinterLanding/">Pinter Social App</a><br>
+	  <a href="https://github.com/alanfinnin/Pizza_Project_CS4084">Fake Pizza Ordering App</a><br>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+	  <a href="https://www.linkedin.com/in/alan-finnin/"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+	  <a href="https://github.com/alanfinnin"><i class="fa fa-github fa-3x aria-hidden="true"></i></a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
