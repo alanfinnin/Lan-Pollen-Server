@@ -1,0 +1,1 @@
+Tree Pollen{Today: None,Tomorrow: None,Saturday: None,}Grass Pollen{Today: High,Tomorrow: Moderate,Saturday: Moderate,}Ragweed Pollen{Today: None,Tomorrow: None,Saturday: None,}
