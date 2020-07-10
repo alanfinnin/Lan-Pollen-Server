@@ -14,7 +14,7 @@
 		$treePollen = substr($treePollenFull, 0, strpos($treePollenFull,"}"));
 		echo "<h2>" . $type . "</h3><br>";
 
-		$treePollenTodayFull = substr($treePollen,strpos($treePollen,"Today"));
+		$treePollenTodayFull = substr($treePollen,strpos($treePollen,"{")+1);
 		$treePollenToday = substr($treePollenTodayFull, 0, strpos($treePollenTodayFull,","));
 
 		echo "<p class=\"today\">" . $treePollenToday . "<p>&nbsp;<p class=\"todayCircle\">o</p><br>";
