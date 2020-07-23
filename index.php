@@ -8,8 +8,8 @@
 	<h1>Pollen Count</h1>
 
 	<?php
-	function getAmount($fileDate, $type) {
-		$fileData = file_get_contents( "data.txt" );
+	function getAmount($fileData, $type) {
+		//$fileData = file_get_contents( "data.txt" );
 		$treePollenFull = substr($fileData,strpos($fileData, $type));
 		$treePollen = substr($treePollenFull, 0, strpos($treePollenFull,"}"));
 		echo "<h2>" . $type . "</h3><br>";
